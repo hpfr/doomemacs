@@ -66,14 +66,6 @@ your `doom!' block, a warning is emitted before replacing it with :emacs vc and
     ;; and the user's config; which are always enabled.
     (doom-module--put '(:doom . nil) :path doom-core-dir :depth -110)
     (doom-module--put '(:user . nil) :path doom-user-dir :depth '(-105 . 105))
-    ;; DEPRECATED: I intend to phase out our internal usage of `use-package' and
-    ;;   move it to a :config use-package module. The macro is far too complex
-    ;;   and magical for our needs, but until this move is done, ':config
-    ;;   use-package' will remain a hardcoded module for backwards
-    ;;   compatibility.
-    (doom-module--put '(:config . use-package)
-                      :path (doom-module-locate-path '(:config . use-package))
-                      :depth -111)
     ;; Load $DOOMDIR/init.el, where the user's `doom!' lives, which will inform
     ;; us of all desired modules.
     (doom-load (file-name-concat doom-user-dir doom-module-init-file)
