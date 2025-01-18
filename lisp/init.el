@@ -8,7 +8,6 @@
 ;;
 ;;; Code:
 
-(doom-require 'doom-ui)
 (doom-require 'doom-projects)
 (doom-require 'doom-editor)
 
