@@ -8,7 +8,6 @@
 ;;
 ;;; Code:
 
-(doom-require 'doom-projects)
 (doom-require 'doom-editor)
 
 ;; Ensure .dir-locals.el in $EMACSDIR and $DOOMDIR are always respected
