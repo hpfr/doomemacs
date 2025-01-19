@@ -8,8 +8,6 @@
 ;;
 ;;; Code:
 
-(doom-require 'doom-editor)
-
 ;; Ensure .dir-locals.el in $EMACSDIR and $DOOMDIR are always respected
 (add-to-list 'safe-local-variable-directories doom-emacs-dir)
 (add-to-list 'safe-local-variable-directories doom-user-dir)
